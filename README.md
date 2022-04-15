@@ -107,7 +107,9 @@ if skill_used > 70 and cutscene < 30:
 상기 입력 스킬의 사용 횟수와 헤드어택 횟수를 출력합니다. 
 ## YOLOv5 ver.
 '미리 custom data로 학습된 가중치 파일 best.pt 로드하기' 제목의 cell을 실행합니다.
-
+```python
+model = torch.hub.load('ultralytics/yolov5', 'custom', path='best.pt')
+```
 경로 내에 best.pt가 없거나, 새로운 가중치 파일을 사용하고 싶을 경우,
 
 링크(https://github.com/ultralytics/yolov5) 를 이용해 custom training을 진행해주세요.
